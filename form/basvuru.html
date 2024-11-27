@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iş başvurusu</title>
+</head>
+<body>
+  <form name="Giriş" action="giriş.html" method="get" autocomplete="on">
+    <fieldset >
+      <legend>İş Başvurusu</legend>
+      <label>Ad soyad</label>
+      <input type="text" placeholder="Adını soyadını gir" tabindex="1"><br>
+      <label>Doğum tarihi</label>
+      <input type="date" name="Doğum" id="Doğ"><br>
+      <label>Cinsiyet</label> <input type="radio" name="Cins"/>Erkek
+      <input type="radio" name="Cins" checked/>Kız <br>
+    </fieldset>
+    <fieldset>
+      <legend>Diğer Bilgiler</legend>
+      <label>E MAİL</label><br>
+      <input type="email" name="Email" id="MAİL"><br>
+      <label>Tel no</label><br>
+      <input type="tel" name="Telefon" id="Numara"><br>
+      <label>Şehir</label><br><select name="İller" size="1">
+        <option value="34">İstanbul</option>
+        <option value="35">İzmir</option>
+        <option value="36">Kars</option>
+        <option value="37">Kastamonu</option>
+      </select><br>
+      <label>İlçe</label><br><input type="text"><br>
+      <label>Adres</label><br>
+      <textarea name="Tanıtma" id="Tanıt" cols="20" rows="5" placeholder="BENİM HAKKIMDA"></textarea><br>
+      <label> Web Sitesi Adresi</label><br>
+      <input type="text" placeholder="web sitesi adresi">
+    </fieldset>
+    <fieldset>
+      <legend>Kariyer Bilgileri</legend>
+      <label>Başvurduğunuz birim</label>
+      <input type="text" placeholder="Satış/Pazarlama"><br>
+      <label>iş tecrübesi</label>
+      <input type="number">yıl<br>
+      <label>Yabancı Dil Seviyeniz</label><br>
+      <input type="range">
+    </fieldset>
+    <fieldset>
+      <legend>Diğer Bilgiler</legend>
+      <label>Hobiler</label><br>
+      <input type="checkbox" name="Müzik" id="M"/>Kitap
+      <input type="checkbox" name="Basketbol" id="B"/>MÜZİK
+      <input type="checkbox" name="Futbol" id="F"/>Sinema <br>
+      <label>SEVDİĞİN RENK SEÇ</label> <input type="color" name="Renk"><br>
+      <label>Fotoğraf Yükle</label><br>
+      <input type="file"/>
+    </fieldset>
+    <button type="submit" value="Bas">okudum anladım</button>
+    <button disabled>Tamam</button>
+    <button type="reset" value="Temizle">Resetle</button>
+    
+
+  </form>
+  <p></p>
+</body>
+</html>

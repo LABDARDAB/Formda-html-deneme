@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <form name="Giriş" action="giriş.html" method="get" autocomplete="on">
+    <fieldset >
+      <legend>Ad Soyad</legend>
+      <label>Ad</label>
+      <input type="text" placeholder="Adını gir" tabindex="1"><br>
+      <label>Soyad</label>
+      <input type="text"><br>
+      <label>Cinsiyet</label> <input type="radio" name="Cins"/>Erkek
+      <input type="radio" name="Cins" checked/>Kız <br>
+      <label>Doğum tarihi</label>
+      <input type="date" name="Doğum" id="Doğ"><br>
+      <label>Doğum Saati</label>
+      <input type="time" name="DoğumSaat" id="DoğSaat"><br>
+      <label>E MAİL</label>
+      <input type="email" name="Email" id="MAİL"><br>
+      <label>Tel no</label>
+      <input type="tel" name="Telefon" id="Numara"><br>
+      <label>Yaş</label>
+      <input type="number" name="Yaş" id="Yas" min="15" max="130"><br>
+       <label>Doğum Yeri</label><select name="İller" size="1">
+        <option value="34">İstanbul</option>
+        <option value="35">İzmir</option>
+        <option value="36">Kars</option>
+        <option value="37">Kastamonu</option>
+      </select>
+
+
+    </fieldset>
+    <fieldset>
+      <legend>Kullanıcı Adı ve şifre</legend>
+      <label>Kullanıcı Ad</label>
+      <input type="text" placeholder="Kullanıcı adını Gir"><br>
+      <label>Şifre</label>
+      <input type="password"><br>
+    </fieldset>
+    <fieldset>
+      <legend>Hobileriniz</legend>
+      <label>Dürüst Şekilde Seçiniz</label><br>
+      <input type="checkbox" name="Müzik" id="M"/>MÜZİK
+      <input type="checkbox" name="Basketbol" id="B"/>BASKETBOL
+      <input type="checkbox" name="Futbol" id="F"/>FUTBOL
+      <input type="checkbox" name="Resim" id="R"/>RESİM <br>
+      <label>Gezmek İstediğiniz Şehirler</label><br>
+      <select name="Şehirler" multiple>
+        <option value="34">İstanbul</option>
+        <option value="35">İzmir</option>
+        <option value="36">Kars</option>
+        <option value="37">Kastamonu</option>
+      </select> <br>
+      <input type="submit" value="Dürüstçe Seçtin Mi"> <br>
+      <label>SEVDİĞİN RENK SEÇ</label> <input type="color" name="Renk"><br>
+      <label>Şahsınızı Tanıtın</label><br>
+      <textarea name="Tanıtma" id="Tanıt" cols="20" rows="5"></textarea><br>
+      <label>Film Seç</label><br>
+      <label>Godfather</label>
+      <meter min="0" low="40" high="90" max="100" value="100">11</meter><br>
+      <label>İnterstellar</label>
+      <meter min="0" low="40" high="90" max="100" value="50">11</meter>
+    </fieldset>
+    <button type="reset" value="Temizle">Resetle</button>
+    <button type="submit" value="Bas">BAs BUna</button>
+  </form>
+  <p></p>
+</body>
+</html>

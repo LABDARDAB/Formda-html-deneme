@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <form name="Giriş" action="deneme.html" method="get" autocomplete="on">
+    <fieldset >
+      <legend>Kişisel Bilgiler</legend>
+      <label>Ad</label><br>
+      <input type="text" placeholder="Adınız" tabindex="1"><br>
+      <label>Soyad</label><br>
+      <input type="text" placeholder="Soyadınız"><br>
+      <label>Cinsiyet</label><br> <input type="radio" name="Cins"/>Erkek
+      <input type="radio" name="Cins" checked/>Kız <br>
+      <legend>Hobileriniz</legend>
+      <label>Dürüst Şekilde Seçiniz</label><br>
+      <input type="checkbox" name="Kitap" id="K"/>Kitap
+      <input type="checkbox" name="Müzik" id="B"/>Müzik
+      <input type="checkbox" name="Spor" id="F"/>Spor
+    </fieldset>
+    <fieldset>
+      <legend>Diğer Bilgiler</legend>
+      <label>Doğum Yeri</label><select name="İller" size="1">
+        <option value="34">İstanbul</option>
+        <option value="35">İzmir</option>
+        <option value="36">Kars</option>
+        <option value="37">Kastamonu</option>
+      </select><br>
+      <label>İlçe</label><input type="text"><br>
+      <textarea name="Tanıtma" id="Tanıt" cols="20" rows="5" placeholder="BENİM HAKKIMDA"></textarea><br>
+    </fieldset>
+    <button type="submit" value="Tamam">Tamam</button>
+    <button type="reset" value="Temizle">Temizle</button>
+    <button class="btn warning">Uyarı</button>
+    
+  </form>
+  <p></p>
+</body>
+</html>
